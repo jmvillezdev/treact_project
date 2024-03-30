@@ -167,6 +167,7 @@ nav {
     color: #243e63;
     font-weight: 900;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .features__para {
@@ -174,9 +175,15 @@ nav {
     font-size: 18px;
     line-height: 1.5;
     font-weight: 500;
-    max-width: 70%;
+    max-width: 60%;
     text-align: center;
     margin-bottom: 16px;
+}
+
+
+.feature__text--wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .feature__text--title {
@@ -189,12 +196,17 @@ nav {
     font-size: 16px;
     color: #7c8ba1;
     font-weight: 500;
+    width: 60%;
+    text-align: left;
+    margin-top: 16px;
 }
 
 .feature img {
     border: 1px solid rgb(226, 232, 240);
     border-radius: 9999px;
     padding: 20px;
+    max-width: 66px;
+    max-height: 66px;
 }
 
 .features__container {
@@ -208,6 +220,5 @@ nav {
     gap: 20px;
     justify-content: space-between;
     padding: 32px 0;
-    margin: 0 16px;
-    max-width: 30%;
+    max-width: calc(100% / 3);
 }
