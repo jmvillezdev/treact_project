@@ -36,7 +36,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding-top: 32px;
-    margin-bottom: 6rem;
 }
 
 .nav__logo--container a img {
@@ -79,6 +78,7 @@ nav {
 
 .header__wrapper {
     display: flex;
+    padding: 6rem 0;
 }
 
 .header__text--wrapper {
@@ -109,6 +109,7 @@ nav {
     color: #243e63;
     font-size: 18px;
     margin: 32px 0;
+    line-height: 1.5;
 }
 
 .input__wrapper {
@@ -144,4 +145,69 @@ nav {
     max-width: 80%;
     opacity: 0.5;
     margin-top: 16px;
+}
+
+/* FEATURES */
+
+.features__wrapper {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 0;
+}
+
+.features__subtitle {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.features__heading {
+    font-size: 48px;
+    color: #243e63;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+.features__para {
+    color: #7c8ba1;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+    max-width: 70%;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.feature__text--title {
+    font-size: 24px;
+    color: #243e63;
+    font-weight: 700;
+}
+
+.feature__text--description {
+    font-size: 16px;
+    color: #7c8ba1;
+    font-weight: 500;
+}
+
+.feature img {
+    border: 1px solid rgb(226, 232, 240);
+    border-radius: 9999px;
+    padding: 20px;
+}
+
+.features__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 32px 0;
+    margin: 0 16px;
+    max-width: 30%;
 }
