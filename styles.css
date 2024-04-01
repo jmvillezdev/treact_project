@@ -287,18 +287,62 @@ nav {
 .value__container {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 40px;
 }
 
 .value {
     width: 50%;
 }
 
+.value__text--title {
+    margin-left: 8px;
+}
+
 .value__heading {
     display: flex;
+    align-items: center;
     gap: 4px;
 }
 
 .value__symbol {
     max-width: 36px;
     max-height: 36px;
+}
+
+.value__symbol--dollar {
+    background-color: #9ae6b5;
+    padding: 8px;
+    border-radius: 9999px;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value__symbol--briefcase {
+    background-color: #feb2b2;
+    padding: 8px;
+    border-radius: 9999px;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-briefcase {
+    color: rgb(155 44 44);
+}
+
+.fa-dollar-sign {
+    color: rgb(39 103 73)
+}
+
+
+.feature__text--description.values__description {
+    width: 260px;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-right: 20px;
 }
