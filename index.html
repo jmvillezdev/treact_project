@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/85c11bb262.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
     <title>T React</title>
   </head>
   <body>
@@ -20,7 +21,7 @@
         </div>
         <ul class="nav__list">
           <li class="nav__links">
-            <a href="#about" class="nav__link">About</a>
+            <a href="#features" class="nav__link">About</a>
           </li>
           <li class="nav__links">
             <a href="#blog" class="nav__link">Blog</a>
@@ -38,6 +39,50 @@
             <a href="" class="nav__link link--purple">Sign Up</a>
           </li>
         </ul>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="#" class="menu__link" onclick="closeMenu()">Login</a>
+            </li>
+            <li class="menu__list">
+              <a href="#features" class="menu__link" onclick="closeMenu()"
+                >Sign Up</a
+              >
+            </li>
+            <li class="menu__list">
+              <a
+                href="#features"
+                class="menu__link no-cursor"
+                onclick="closeMenu()"
+                >About</a
+              >
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link no-cursor" onclick="closeMenu()"
+                >Blog</a
+              >
+            </li>
+            <li class="menu__list">
+              <a
+                href="#pricing"
+                class="menu__link no-cursor"
+                onclick="closeMenu()"
+                >Pricing</a
+              >
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link no-cursor" onclick="closeMenu()"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
     <section id="header">
@@ -274,7 +319,7 @@
       </div>
     </section>
 
-    <section id="features">
+    <section id="pricing">
       <div class="row">
         <div class="features__wrapper">
           <h5 class="section__subtitle text--purple">PRICING</h5>
@@ -430,6 +475,53 @@
       </div>
     </section>
 
+    <section id="faqs">
+      <div class="row">
+        <div class="faqs__section--container">
+          <div class="faqs__text--container">
+            <h5 class="section__subtitle text--purple">FAQS</h5>
+            <h2 class="section__heading">
+              You have
+              <span class="text--purple">Questions?</span>
+            </h2>
+            <p class="section__para gray--center">
+              And we have got answers to all of them. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit.
+            </p>
+          </div>
+
+          <div class="faqs__list--container">
+            <ul class="faqs__list">
+              <li class="faq">
+                Are all the templates easily customizable?
+                <span><i class="fa-solid fa-arrow-down"></i></span>
+              </li>
+              <li class="faq">
+                How long do you usually support a standalone template for?
+                <span><i class="fa-solid fa-arrow-down"></i></span>
+              </li>
+              <li class="faq">
+                What kind of payment methods do you accept?
+                <span><i class="fa-solid fa-arrow-down"></i></span>
+              </li>
+              <li class="faq">
+                Is there a subscription service to get the latest templates?
+                <span><i class="fa-solid fa-arrow-down"></i></span>
+              </li>
+              <li class="faq">
+                Are the templates compatible with React?
+                <span><i class="fa-solid fa-arrow-down"></i></span>
+              </li>
+              <li class="faq">
+                Do you really support Internet Explorer 11?
+                <span><i class="fa-solid fa-arrow-down"></i></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="action">
       <div class="row">
         <div class="action__container">
@@ -466,90 +558,91 @@
           </div>
 
           <div class="footer__link--list">
-            <h4 class="footer__link--heading">MAIN</h4>
+            <h4 class="footer__link--heading">PRODUCT</h4>
             <ul class="footer__links">
               <li class="footer__link">
-                <a href="" class="link--item">Blog</a>
+                <a href="" class="link--item">Log In</a>
               </li>
               <li class="footer__link">
-                <a href="" class="link--item">FAQs</a>
+                <a href="" class="link--item">Personal</a>
               </li>
               <li class="footer__link">
-                <a href="" class="link--item">Support</a>
+                <a href="" class="link--item">Business</a>
               </li>
               <li class="footer__link">
-                <a href="" class="link--item">About Us</a>
+                <a href="" class="link--item">Team</a>
               </li>
             </ul>
           </div>
 
           <div class="footer__link--list">
-            <h4 class="footer__link--heading">MAIN</h4>
+            <h4 class="footer__link--heading">PRESS</h4>
             <ul class="footer__links">
               <li class="footer__link">
-                <a href="" class="link--item">Blog</a>
+                <a href="" class="link--item">Logos</a>
               </li>
               <li class="footer__link">
-                <a href="" class="link--item">FAQs</a>
+                <a href="" class="link--item">Events</a>
               </li>
               <li class="footer__link">
-                <a href="" class="link--item">Support</a>
+                <a href="" class="link--item">Stories</a>
               </li>
               <li class="footer__link">
-                <a href="" class="link--item">About Us</a>
+                <a href="" class="link--item">Office</a>
               </li>
             </ul>
           </div>
 
           <div class="footer__link--list">
-            <h4 class="footer__link--heading">MAIN</h4>
+            <h4 class="footer__link--heading">TEAM</h4>
             <ul class="footer__links">
               <li class="footer__link">
-                <a href="" class="link--item">Blog</a>
+                <a href="" class="link--item">Career</a>
               </li>
               <li class="footer__link">
-                <a href="" class="link--item">FAQs</a>
+                <a href="" class="link--item">Founders</a>
               </li>
               <li class="footer__link">
-                <a href="" class="link--item">Support</a>
+                <a href="" class="link--item">Culture</a>
               </li>
               <li class="footer__link">
-                <a href="" class="link--item">About Us</a>
+                <a href="" class="link--item">Onboarding</a>
               </li>
             </ul>
           </div>
 
           <div class="footer__link--list">
-            <h4 class="footer__link--heading">MAIN</h4>
+            <h4 class="footer__link--heading">LEGAL</h4>
             <ul class="footer__links">
               <li class="footer__link">
-                <a href="" class="link--item">Blog</a>
+                <a href="" class="link--item">GDPR</a>
               </li>
               <li class="footer__link">
-                <a href="" class="link--item">FAQs</a>
+                <a href="" class="link--item">Privacy Policy</a>
               </li>
               <li class="footer__link">
-                <a href="" class="link--item">Support</a>
+                <a href="" class="link--item">Terms Of Service</a>
               </li>
               <li class="footer__link">
-                <a href="" class="link--item">About Us</a>
+                <a href="" class="link--item">Disclaimer</a>
               </li>
             </ul>
           </div>
         </div>
-        <hr class="footer__divider">
+        <hr class="footer__divider" />
         <div class="footer__text--container">
-            <div class="footer__logo--container">
-                <a href="#" class="footer__logo--link"
-                  ><img src="./assets/logo-light.svg" alt="TReact Logo" />Treact Inc.</a
-                >
-              </div>
-              <p class="footer__text">© 2024 Treact Inc. All Rights Reserved.</p>
-              <div class="footer__icons--container">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-              </div>
+          <div class="footer__logo--container">
+            <a href="#" class="footer__logo--link"
+              ><img src="./assets/logo-light.svg" alt="TReact Logo" />Treact
+              Inc.</a
+            >
+          </div>
+          <p class="footer__text">© 2024 Treact Inc. All Rights Reserved.</p>
+          <div class="footer__icons--container">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
         </div>
       </div>
     </footer>
