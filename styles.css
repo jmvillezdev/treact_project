@@ -829,12 +829,13 @@ footer {
 
     .btn__menu {
         display: block;
+        margin-left: 4px;
     }
   }
 
 
   /* SMALL PHONES */
-  @media (max-width: 576px) {
+  @media (max-width: 480px) {
 
     .row {
         max-width: 100vw;
@@ -842,6 +843,18 @@ footer {
     .section__wrapper {
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .section__text--wrapper.left {
+        margin: 0;
+    }
+
+    .input__btn.link--purple {
+        position: absolute;
+        padding: 8px 16px;
+        bottom: 5px;
+        margin: 0;
     }
 
     .header__text--wrapper,
@@ -854,11 +867,16 @@ footer {
     .gray--center,
     .section__heading {
         text-align: center;
+        align-self: center;
     }
 
     .input__wrapper {
         width: 70vw;
-        align-self: center;
+    }
+
+    input {
+        width: 100%;
+   
     }
 
     .header__img--wrapper,
@@ -871,7 +889,7 @@ footer {
     
     .header__img--wrapper img,
     .section__img--wrapper img {
-        width: 500px;
+        width: 90vw;
     }
 
     .features__wrapper,
@@ -880,6 +898,7 @@ footer {
         max-width: 100vw;
         flex-direction: column;
         align-items: center;
+        margin: 12px;
       }
 
       .section__heading {
@@ -911,6 +930,21 @@ footer {
       .value__container {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+      }
+
+      .value {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+
+      .values__description {
+        text-align: center;
       }
 
       .plans__container {
@@ -929,6 +963,11 @@ footer {
         align-self: center;
       }
 
+    
+      .review__heading {
+        text-align: center;
+      }
+
       .customer__wrapper {
         margin-top: 20px;
         align-self: center;
@@ -939,6 +978,10 @@ footer {
 
       blockquote {
         text-align: center;
+      }
+
+      .faqs__section--container {
+        height: 100vh;
       }
 
       .action__container {
@@ -953,12 +996,14 @@ footer {
 
       .action__btn--container {
         width: 40vw;
+        
       }
 
       .button__one,
       .button__two {
         padding: 10px 20px;
         font-size: 12px;
+        margin-right: 12px;
       }
       .action {
         display: flex;
@@ -968,6 +1013,7 @@ footer {
 
       footer {
         width: 100vw;
+        height: 70vh;
       }
 
       .footer__links--container {
