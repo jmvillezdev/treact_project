@@ -567,3 +567,51 @@ blockquote {
     color: #7c8ba1;
 
 }
+
+
+/* ACTION SECTION */
+
+.action__container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 282px;
+    background-color: rgb(100 21 255);
+    border-radius: 0.5rem;
+    justify-content: space-evenly;
+    margin: 96px 0 200px 0;
+}
+
+.action__heading {
+    font-size: 30px;
+    font-weight: 700;
+    color: #f7fafc;
+    width: 40%;
+    margin-left: 80px;
+}
+
+.action__btn--container {
+    width: 40%;
+    display: flex;
+}
+.button__one {
+    font-size: 16px;
+    background: #f56565;
+    margin: 0 32px 0 0;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 9999px;
+    color: #f7fafc;
+    font-weight: 700;
+}
+
+.button__two {
+    font-size: 16px;
+    background: transparent;
+    margin: 0 32px 0 0;
+    padding: 20px 40px;
+    border: 0.3px solid white;
+    border-radius: 9999px;
+    color: #f7fafc;
+    font-weight: 700;
+}
