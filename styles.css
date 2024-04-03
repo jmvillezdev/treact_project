@@ -1065,6 +1065,8 @@ footer {
 
     .row {
         max-width: 100vw;
+        padding-left: 12px;
+        padding-right: 12px;
     }
     .section__wrapper {
         display: flex;
