@@ -1112,7 +1112,7 @@ footer {
     
     .header__img--wrapper img,
     .section__img--wrapper img {
-        width: 500px;
+        width: 90vw;
     }
 
     .features__wrapper,
