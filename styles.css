@@ -520,3 +520,50 @@ hr {
   width: 70%;
   font-weight: 700;
 }
+
+
+/* REVIEW SECTION */
+
+.review__heading {
+    padding: 16px 0;
+    color: #243e63;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+blockquote {
+    font-size: 16px;
+    color: #4a5568;
+    font-weight: 500;
+    line-height: 1.625;
+}
+
+.customer__wrapper {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.customer__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 9999px;
+}
+
+.customer__name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #243e63;
+    padding-bottom: 4px;
+
+}
+
+.customer__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #7c8ba1;
+
+}
